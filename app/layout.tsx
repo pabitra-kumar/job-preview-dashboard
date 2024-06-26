@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <nav className="w-full py-3 px-5 flex justify-between items-center border-b-[#e7e7e7] border-2 ">
+        <nav className="w-full py-3 px-5 flex justify-between items-center border-white border-b-[#e7e7e7] border-2 ">
           <div className="p-3 text-[#dc4a2d] bg-[#e7e7e7] font-bold">Logo</div>
 
           <div className="rounded-full border-[#e7e7e7] text-[#b0b0b0] border-2 text-sm flex gap-10 p-1">
@@ -51,6 +51,15 @@ export default function RootLayout({
               <FiChevronDown className="text-lg font-semibold" />
             </div>
           </div>
+        </nav>
+        <nav className=" px-20 flex gap-14 border-white border-b-[#e7e7e7] text-[#b0b0b0] border-2 text-sm font-semibold">
+          <div className="py-3 text-[#dc4a2d] relative">
+            Job preview
+            <hr className="absolute bottom-0 w-1/2 left-1/2 -translate-x-1/2 border-[#dc4a2d] border-[1.5px]" />
+          </div>
+          <div className="py-3">Applicants</div>
+          <div className="py-3">Match</div>
+          <div className="py-3">Messages</div>
         </nav>
         {children}
       </body>
