@@ -14,27 +14,27 @@ import { IoEyeOutline } from "react-icons/io5";
 
 export const JobPreview = () => {
   return (
-    <section className="w-3/4 max-lg:w-full h-full border-white border-r-[#e7e7e7] border-2 flex flex-col gap-[2vw] py-[3vw] overflow-y-scroll">
-      <div className="px-[5vw] flex flex-col gap-[1.5vw]">
+    <section className="w-3/4 max-lg:w-full h-full border-white border-r-[#e7e7e7] border-2 flex flex-col gap-[1vw] py-[1vw] overflow-y-scroll no-scrollbar">
+      <div className="px-[5vw] flex flex-col gap-[1vw]">
         <div className="flex flex-wrap gap-2 items-center">
-          <h1 className="text-4xl font-bold max-sm:text-2xl text-[#3d3d3d]">
+          <h1 className="text-2xl font-bold text-[#3d3d3d]">
             Senior Product Designer
           </h1>
-          <BsDot className="text-2xl text-[#d1d1d1]" />
-          <p className="text-[#888] ">posted 2 days ago</p>
+          <BsDot className="text-lg text-[#d1d1d1]" />
+          <p className="text-[#888] text-xs ">posted 2 days ago</p>
           <div className="bg-[#ecfdf3] border-[#aaefc6] border-2 rounded-full flex items-center">
-            <BsDot className="text-3xl text-[#17b26a]" />
-            <p className="text-sm text-[#067647] font-semibold pr-4">Open</p>
+            <BsDot className="text-sm text-[#17b26a]" />
+            <p className="text-xs text-[#067647] font-semibold pr-1">Open</p>
           </div>
         </div>
         <div className="flex flex-wrap gap-2 items-center">
-          <GrLocation className="text-2xl text-[#5d5d5d]" />
-          <p className="text-[#5d5d5d] text-xl max-sm:text-base font-medium">
+          <GrLocation className="text-lg text-[#5d5d5d]" />
+          <p className="text-[#5d5d5d] text-base max-sm:text-base font-medium">
             Dalaware, USA
           </p>
-          <BsDot className="text-2xl text-[#d1d1d1]" />
-          <LiaCoinsSolid className="text-2xl text-[#5d5d5d]" />
-          <p className="text-[#5d5d5d] text-xl font-medium max-sm:text-base">
+          <BsDot className="text-lg text-[#d1d1d1]" />
+          <LiaCoinsSolid className="text-lg text-[#5d5d5d]" />
+          <p className="text-[#5d5d5d] text-base font-medium max-sm:text-base">
             $300k-$400k
           </p>
         </div>
@@ -42,35 +42,35 @@ export const JobPreview = () => {
 
       <hr className="border-[#e7e7e7] w-full" />
 
-      <div className="px-[5vw] flex flex-wrap gap-[8vw] ">
-        <div className="flex flex-col gap-2">
+      <div className="px-[5vw] flex flex-wrap gap-[8vw] text-xs">
+        <div className="flex flex-col gap-1">
           <h2 className="text-[#6e6d6d] font-medium">Skills Required</h2>
-          <div className="rounded-lg border-2 w-fit p-1 border-[#d0d5dd] flex gap-1">
-            <Image src={figma} alt="figma icon" />
-            <p className="text-[#344054] text-xs font-medium">Figma</p>
+          <div className="rounded-lg border-[1.5px] w-fit px-1 py-[0.1rem] border-[#d0d5dd] flex gap-1">
+            <Image src={figma} alt="figma icon" className="w-1/2" />
+            <p className="text-[#344054] text-[0.5rem] font-medium">Figma</p>
           </div>
-          <div className="rounded-lg border-2 w-fit p-1 border-[#d0d5dd] flex gap-1">
-            <Image src={adobe1} alt="adobe icon" />
-            <p className="text-[#344054] text-xs font-medium">
+          <div className="rounded-lg border-[1.5px] w-fit px-1 py-[0.1rem] border-[#d0d5dd] flex gap-1">
+            <Image src={adobe1} alt="adobe icon" className="w-1/6" />
+            <p className="text-[#344054] text-[0.5rem] font-medium">
               Adobe Illustrator
             </p>
           </div>
-          <div className="rounded-lg border-2 w-fit p-1 border-[#d0d5dd] flex gap-1">
-            <Image src={adobexd} alt="adobe xd icon" />
-            <p className="text-[#344054] text-xs font-medium">Adobe XD</p>
+          <div className="rounded-lg border-[1.5px] w-fit px-1 py-[0.1rem] border-[#d0d5dd] flex gap-1">
+            <Image src={adobexd} alt="adobe xd icon" className="w-1/6" />
+            <p className="text-[#344054] text-[0.5rem] font-medium">Adobe XD</p>
           </div>
         </div>
         <div className="flex flex-col">
           <h2 className="text-[#6e6d6d] font-medium">Preferred Language</h2>
-          <h2 className="text-[#3d3d3d] font-semibold">English</h2>
+          <h2 className="text-[#3d3d3d] text-sm font-semibold">English</h2>
         </div>
         <div className="flex flex-col">
           <h2 className="text-[#6e6d6d] font-medium">Type</h2>
-          <h2 className="text-[#3d3d3d] font-semibold">Full Time</h2>
+          <h2 className="text-[#3d3d3d] text-sm font-semibold">Full Time</h2>
         </div>
         <div className="flex flex-col">
           <h2 className="text-[#6e6d6d] font-medium">Years of Experience</h2>
-          <h2 className="text-[#3d3d3d] font-semibold">
+          <h2 className="text-[#3d3d3d] text-sm font-semibold">
             3+ years of Experience
           </h2>
         </div>
@@ -78,9 +78,9 @@ export const JobPreview = () => {
 
       <hr className="border-[#e7e7e7] w-full" />
 
-      <div className="px-[5vw] flex flex-col gap-1 text-[#3d3d3d] font-semibold ">
-        <h2 className="text-[#6e6d6d] text-sm font-semibold">About the Job</h2>
-        <ol className="list-decimal flex flex-col gap-1 pl-5">
+      <div className="px-[5vw] flex flex-col gap-1 text-xs text-[#3d3d3d] font-semibold ">
+        <h2 className="text-[#6e6d6d] text-xs font-semibold">About the Job</h2>
+        <ol className="list-decimal flex flex-col gap-1 pl-3">
           <li>Handle the UI/UX Research Design</li>
           <li>
             Work on researching on latest web applications designs & trends
@@ -91,16 +91,16 @@ export const JobPreview = () => {
           </li>
         </ol>
         <p>Benefits:</p>
-        <ul className="list-disc pl-5">
+        <ul className="list-disc pl-3">
           <li>Health insurance</li>
           <li>Provident Fund</li>
         </ul>
         <p>Schedule:</p>
-        <ul className="list-disc pl-5">
+        <ul className="list-disc pl-3">
           <li>Day shift</li>
         </ul>
         <p>Supplemental pay types:</p>
-        <ul className="list-disc pl-5">
+        <ul className="list-disc pl-3">
           <li>Performance bonus</li>
           <li>Yearly bonus</li>
         </ul>
@@ -110,11 +110,11 @@ export const JobPreview = () => {
       <hr className="border-[#e7e7e7] w-full" />
 
       <div className="px-[5vw] flex flex-col gap-[2vw]">
-        <div className="flex gap-2 items-center text-[#4f4f4f] text-xl font-semibold">
-          <Image src={icon} alt="Atlassian logo" />
+        <div className="flex gap-2 items-center text-[#4f4f4f] text-sm font-semibold">
+          <Image src={icon} alt="Atlassian logo" className="w-[4%]" />
           <p>Atlassian</p>
         </div>
-        <div className="grid grid-cols-2 max-md:text-xs w-fit gap-x-[10vw] gap-y-3">
+        <div className="grid grid-cols-2 text-[0.5rem] w-fit gap-x-[10vw] gap-y-3">
           <div className="flex flex-col gap-1">
             <h2 className="text-[#6e6d6d] font-medium">Company Size</h2>
             <h2 className="text-[#3d3d3d] font-semibold">1k - 2k Followers</h2>
